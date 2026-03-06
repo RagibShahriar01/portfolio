@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ragib Shahriar - Computer Science Professional</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Playfair+Display:wght@700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="logo">RS</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="nav-cta" onclick="downloadResume()">
+                <i class="fas fa-download"></i> Resume
+            </button>
+            <!-- Navigation -->
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1>Ragib Shahriar</h1>
+                        <p>A passionate 10th semester Computer Science & Engineering student who builds practical C#
+                            desktop and full stack web applications while pursuing machine learning research</p>
+                        <div class="hero-buttons">
+                            <button class="btn btn-primary"
+                                onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })">
+                                <i class="fas fa-envelope"></i> Get In Touch
+                            </button>
+                            <button class="btn btn-secondary" onclick="downloadResume()">
+                                <i class="fas fa-download"></i> Download CV
+                            </button>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <div class="profile-circle">
+                            <div class="profile-inner">
+                                <div class="profile-image">
+                                    <img src="profile.jpeg" alt="Ragib Shahriar Profile Picture" class="profile-img">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="social-links">
+            <a href="https://github.com/ragibshahriar01" target="_blank" title="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/ragibshahriar01" target="_blank" title="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="mailto:shahriarragib7@gmail.com" title="Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+
+        <!-- Video Introduction Section -->
+        <section class="video-section" id="about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="video-content">
+                    <div class="video-frame" onclick="playVideo()">
+                        <div class="video-placeholder">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="video-text">
+                        <h3>Welcome to My Portfolio</h3>
+                        <p>Hi! I'm Ragib Shahriar, a passionate computer science student from Jessore, Bangladesh. With
+                            a strong foundation in multiple programming languages and frameworks, I specialize in
+                            creating robust applications across different platforms.</p>
+                        <p>This video introduces myself, my background and my journey in software development.</p>
+                        <p>I'm always eager to learn new technologies, contribute to meaningful projects and collaborate
+                            with like minded professionals. Let's build something amazing together!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="skills-container">
+                    <div class="skill-card">
+                        <h4><i class="fas fa-code"></i> Programming Languages</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">C++</span>
+                            <span class="skill-tag">C#</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">PHP</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <h4><i class="fas fa-database"></i> Databases & Backend</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">ASP.NET Core</span>
+                            <span class="skill-tag">PHP</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <h4><i class="fas fa-pencil-ruler"></i> Frontend Tools</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">HTML</span>
+                            <span class="skill-tag">CSS</span>
+                            <span class="skill-tag">JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <h4><i class="fas fa-tools"></i> Tools</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">GitHub</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3 class="project-title">Research Job Portal</h3>
+                            <p class="project-period">Fall 2024 - 2025</p>
+                            <div class="project-tech">
+                                <span class="tech-badge">C#</span>
+                                <span class="tech-badge">.NET</span>
+                                <span class="tech-badge">WinForms</span>
+                                <span class="tech-badge">MySQL</span>
+                            </div>
+                        </div>
+                        <div class="project-description">
+                            A comprehensive desktop application enabling researchers to post opportunities and manage
+                            student applications. Features include job posting management, student browsing, and
+                            application tracking within a structured interface.
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3 class="project-title">Parliament Building 3D</h3>
+                            <p class="project-period">Summer 2024 - 2025</p>
+                            <div class="project-tech">
+                                <span class="tech-badge">C++</span>
+                                <span class="tech-badge">OpenGL</span>
+                                <span class="tech-badge">GLUT</span>
+                            </div>
+                        </div>
+                        <div class="project-description">
+                            A sophisticated 3D graphical visualization of Bangladesh National Parliament Building using
+                            computer graphics principles. Implements transformations, object modeling, and scene
+                            composition for a detailed environment.
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3 class="project-title">Online Marketplace</h3>
+                            <p class="project-period">Fall 2025 - 2026</p>
+                            <div class="project-tech">
+                                <span class="tech-badge">HTML</span>
+                                <span class="tech-badge">CSS</span>
+                                <span class="tech-badge">JavaScript</span>
+                                <span class="tech-badge">PHP</span>
+                            </div>
+                        </div>
+                        <div class="project-description">
+                            A full-featured web-based marketplace platform allowing users to post, browse, and purchase
+                            new or used products. Features product listings, search functionality, and server-side PHP
+                            management of product data.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience">
+            <div class="container">
+                <h2 class="section-title">Experience</h2>
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div>
+                            <h3>Freelance C# Desktop Application Developer</h3>
+                            <p class="role">Self-employed</p>
+                        </div>
+                        <span class="period">2025 - Present</span>
+                    </div>
+                    <ul>
+                        <li>Developed and delivered six desktop applications in C# for university course projects,
+                            translating student requirements into functional applications</li>
+                        <li>Provided hands-on testing, bug fixes and post-delivery support to ensure students met their
+                            course submission criteria</li>
+                        <li>Demonstrated proficiency in desktop application architecture and Windows Forms development
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">Education</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>B.Sc in Computer Science and Engineering</h4>
+                            <p class="period">2023 - Present</p>
+                            <p><strong>American International University, Bangladesh</strong></p>
+                            <p>CGPA: 3.65 | Dean's List Honors (Fall 2023-2024) with semester GPA of 3.77</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>Higher Secondary Certificate (HSC)</h4>
+                            <p class="period">2018 - 2020</p>
+                            <p><strong>Government M.M College, Jessore</strong></p>
+                            <p>GPA: 5.00</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>Secondary School Certificate (SSC)</h4>
+                            <p class="period">2016 - 2018</p>
+                            <p><strong>Police Line Secondary School, Jessore</strong></p>
+                            <p>GPA: 5.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="container">
+                <h2 class="section-title">Let's Connect</h2>
+                <div class="contact-content">
+                    <h2>Get In Touch</h2>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <p>Email</p>
+                                <a href="mailto:shahriarragib7@gmail.com">shahriarragib7@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <p>Phone</p>
+                                <a href="tel:+8801764288407">+880 176 4288 407</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <p>Location</p>
+                                <p>Jessore, Bangladesh</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); margin-top: 2rem;">I'm always interested in hearing about
+                        new projects and opportunities. Feel free to reach out!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Ragib Shahriar. All rights reserved. | <a href="#"
+                    style="color: var(--accent-light); text-decoration: none;">Privacy Policy</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
